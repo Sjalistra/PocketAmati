@@ -9,5 +9,6 @@ public class CalculatorActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
+        setTitle(getResources().getText(R.string.calcName));
     }
 }

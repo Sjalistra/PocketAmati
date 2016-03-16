@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name" translatable="false">Pocket Amati</string>
+    <string name="calcName">Calculator</string>
+    <string name="measureName">Measurements</string>
+    <string name="craftName">Crafting</string>
+    <string name="galleryName">Documentation</string>
+    <string name="notesName">Notes</string>
+    <string name="biosName">Bios</string>
+    <string name="toysName">Tuner</string>
+    <string name="addressBookName">Address Book</string>
+    <string name="wishlistName">Wishlist</string>
+    <string name="expGalleryName">Expensive Instruments</string>
     <string name="calcDesc">Calculators for Luthiers</string>
     <string name="measureDesc">Prebuild measurements</string>
     <string name="craftDesc">Recipes and more</string>
@@ -10,4 +20,6 @@
     <string name="addressBookDesc">Address Book</string>
     <string name="wishlistDesc">Wishlist for your tools</string>
     <string name="expGalleryDesc">Gallery with expensive violins and such</string>
+    <string name="scaleLengthViolin">Scale Length (Violin)</string>
+    <string name="houseAmati">Amati</string>
 </resources>

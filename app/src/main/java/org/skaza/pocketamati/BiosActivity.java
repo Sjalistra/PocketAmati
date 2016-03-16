@@ -9,5 +9,6 @@ public class BiosActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bios);
+        setTitle(getResources().getText(R.string.biosName));
     }
 }
