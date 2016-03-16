@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pocket Amati</string>
+    <string name="addressBookDesc">Książka adresowa</string>
+    <string name="biosDesc">Biografie znanych lutników i inne rzeczy związane z historią</string>
+    <string name="calcDesc">Kalkulatory wymiarów</string>
+    <string name="craftDesc">Przepisy na lakiery i inne rzeczy</string>
+    <string name="expGalleryDesc">Galeria drogich instrumentów etc.</string>
+    <string name="galleryDesc">Galeria dokumentacji</string>
+    <string name="measureDesc">Gotowe wymiary</string>
+    <string name="notesDesc">Twoje notatki</string>
+    <string name="toysDesc">Narzędzia do strojenia</string>
+    <string name="wishlistDesc">Lista życzeń</string>
+</resources>

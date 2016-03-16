@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="false">
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,105 +12,107 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="org.skaza.pocketamati.MainActivity">
+    tools:context="org.skaza.pocketamati.MainActivity"
+    android:background="#1145111F">
 
     <ImageButton
+        android:id="@+id/calculators"
+        android:onClick="switchToCalc"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/calculators"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:src="@android:drawable/ic_menu_call"
         android:clickable="true"
         android:cropToPadding="false"
-        android:contentDescription="Calculators for Luthiers" />
-
+        android:contentDescription="@string/calcDesc" />
     <ImageButton
+        android:id="@+id/measurements"
+        android:onClick="switchToMeasure"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/measurements"
         android:src="@android:drawable/ic_menu_camera"
         android:layout_below="@+id/calculators"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:clickable="true"
-        android:contentDescription="Prebuild measurements" />
-
+        android:contentDescription="@string/measureDesc" />
     <ImageButton
+        android:id="@+id/crafting"
+        android:onClick="switchToCraft"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/crafting"
         android:src="@android:drawable/ic_menu_view"
         android:clickable="true"
         android:layout_below="@+id/measurements"
         android:layout_alignParentLeft="true"
-        android:contentDescription="Recipes and more" />
-
+        android:contentDescription="@string/craftDesc" />
     <ImageButton
+        android:id="@+id/gallery"
+        android:onClick="switchToGallery"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/gallery"
         android:src="@android:drawable/ic_menu_today"
         android:clickable="true"
         android:layout_below="@+id/crafting"
         android:layout_alignParentLeft="true"
-        android:contentDescription="Documentation gallery" />
-
+        android:contentDescription="@string/galleryDesc" />
     <ImageButton
+        android:id="@+id/notes"
+        android:onClick="switchToNotes"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/notes"
         android:src="@android:drawable/ic_menu_send"
         android:clickable="true"
         android:layout_below="@+id/gallery"
         android:layout_alignParentLeft="true"
-        android:contentDescription="Your personal notes" />
-
+        android:contentDescription="@string/notesDesc" />
     <ImageButton
+        android:id="@+id/bios"
+        android:onClick="switchToBios"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/bios"
         android:src="@android:drawable/ic_menu_compass"
         android:layout_below="@+id/notes"
         android:layout_centerHorizontal="true"
-        android:contentDescription="Bios of famous luthiers and other history related stuff" />
-
+        android:contentDescription="@string/biosDesc" />
     <ImageButton
+        android:id="@+id/toys"
+        android:onClick="switchToToys"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/toys"
         android:src="@android:drawable/ic_menu_rotate"
         android:layout_below="@+id/bios"
         android:layout_centerHorizontal="true"
-        android:contentDescription="Helpful for tuning your violin and to check stuff up" />
-
+        android:contentDescription="@string/toysDesc" />
     <ImageButton
+        android:id="@+id/adressBook"
+        android:onClick="switchToAddressBook"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/adressBook"
         android:src="@android:drawable/ic_menu_sort_alphabetically"
         android:layout_below="@+id/toys"
         android:layout_centerHorizontal="true"
-        android:contentDescription="Address Book" />
-
+        android:contentDescription="@string/addressBookDesc" />
     <ImageButton
+        android:id="@+id/wishlist"
+        android:onClick="switchToWish"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/wishlist"
         android:src="@android:drawable/ic_menu_mapmode"
         android:layout_below="@+id/adressBook"
         android:layout_centerHorizontal="true"
-        android:contentDescription="Wishlist for your tools" />
-
+        android:contentDescription="@string/wishlistDesc" />
     <ImageButton
+        android:id="@+id/expensiveGallery"
+        android:onClick="switchToExpensive"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/expensiveGallery"
         android:src="@android:drawable/ic_menu_always_landscape_portrait"
         android:layout_below="@+id/wishlist"
         android:layout_centerHorizontal="true"
-        android:contentDescription="Gallery with expensive violins and such" />
+        android:contentDescription="@string/expGalleryDesc" />
 
 </RelativeLayout>
 </ScrollView>
