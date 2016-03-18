@@ -19,7 +19,8 @@
         <activity android:name=".CraftingActivity" />
         <activity android:name=".BiosActivity" />
         <activity android:name=".ToysActivity" />
-        <activity android:name=".ExpensiveActivity"></activity>
+        <activity android:name=".ExpensiveActivity" />
+        <activity android:name=".CalculatorActivities.ScaleLengthActivity"></activity>
     </application>
 
 </manifest>

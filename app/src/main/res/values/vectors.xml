@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="AmatiVector">
+        <item>Norbert Amati (1969 &#8211; 2013)</item>
+        <item>Arek Amati (1899 &#8211; 1954)</item>
+        <item>Kazik Amati (1845 &#8211; 1900)</item>
+        <item>Rysiu Amati (1800 &#8211; 1830)</item>
+    </string-array>
+    <string-array name="StradivariVector">
+        <item>Norbert Stradivari (1969 &#8211; 2013)</item>
+        <item>Arek Stradivari (1899 &#8211; 1954)</item>
+        <item>Kazik Stradivari (1845 &#8211; 1900)</item>
+        <item>Rysiu Stradivari (1800 &#8211; 1830)</item>
+    </string-array>
+</resources>

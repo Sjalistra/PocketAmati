@@ -22,4 +22,11 @@
     <string name="expGalleryDesc">Gallery with expensive violins and such</string>
     <string name="scaleLengthViolin">Scale Length (Violin)</string>
     <string name="houseAmati">Amati</string>
+    <string name="houseStradivari">Stradivari</string>
+    <string name="buttonGo">Go</string>
+    <string name="giveMeData">Input board length</string>
+    <string name="compute">Compute</string>
+    <string name="neckLength">Neck:</string>
+    <string name="boardLength">Board:</string>
+    <string name="scaleLengthViolinDesc">Computed scale length equals</string>
 </resources>
