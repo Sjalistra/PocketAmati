@@ -11,4 +11,21 @@
     <string name="notesDesc">Twoje notatki</string>
     <string name="toysDesc">Narzędzia do strojenia</string>
     <string name="wishlistDesc">Lista życzeń</string>
+    <string name="addressBookName">Książka adresowa</string>
+    <string name="biosName">Biografie</string>
+    <string name="boardLength">Płyta:</string>
+    <string name="buttonGo">Idź</string>
+    <string name="calcName">Kalkulator</string>
+    <string name="compute">Licz</string>
+    <string name="craftName"></string>
+    <string name="galleryName">Dokumentacja</string>
+    <string name="giveMeData">Podaj długość płyty</string>
+    <string name="expGalleryName">Drogie instrumenty</string>
+    <string name="measureName">Wymiary</string>
+    <string name="neckLength">Szyjka:</string>
+    <string name="notesName">Notatki</string>
+    <string name="scaleLengthViolin">Menzura (Skrzypce)</string>
+    <string name="scaleLengthViolinDesc">Menzura wynosi</string>
+    <string name="toysName"></string>
+    <string name="wishlistName">Lista życzeń</string>
 </resources>

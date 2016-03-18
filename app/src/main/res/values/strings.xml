@@ -6,7 +6,7 @@
     <string name="galleryName">Documentation</string>
     <string name="notesName">Notes</string>
     <string name="biosName">Bios</string>
-    <string name="toysName">Tuner</string>
+    <string name="toysName" translatable="false">Tuner</string>
     <string name="addressBookName">Address Book</string>
     <string name="wishlistName">Wishlist</string>
     <string name="expGalleryName">Expensive Instruments</string>
@@ -21,8 +21,8 @@
     <string name="wishlistDesc">Wishlist for your tools</string>
     <string name="expGalleryDesc">Gallery with expensive violins and such</string>
     <string name="scaleLengthViolin">Scale Length (Violin)</string>
-    <string name="houseAmati">Amati</string>
-    <string name="houseStradivari">Stradivari</string>
+    <string name="houseAmati" translatable="false">Amati</string>
+    <string name="houseStradivari" translatable="false">Stradivari</string>
     <string name="buttonGo">Go</string>
     <string name="giveMeData">Input board length</string>
     <string name="compute">Compute</string>
