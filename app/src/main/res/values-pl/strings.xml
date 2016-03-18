@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Pocket Amati</string>
     <string name="addressBookDesc">Książka adresowa</string>
     <string name="biosDesc">Biografie znanych lutników i inne rzeczy związane z historią</string>
     <string name="calcDesc">Kalkulatory wymiarów</string>
@@ -17,7 +16,7 @@
     <string name="buttonGo">Idź</string>
     <string name="calcName">Kalkulator</string>
     <string name="compute">Licz</string>
-    <string name="craftName"></string>
+    <string name="craftName">Instrukcje</string>
     <string name="galleryName">Dokumentacja</string>
     <string name="giveMeData">Podaj długość płyty</string>
     <string name="expGalleryName">Drogie instrumenty</string>
@@ -28,4 +27,12 @@
     <string name="scaleLengthViolinDesc">Menzura wynosi</string>
     <string name="toysName"></string>
     <string name="wishlistName">Lista życzeń</string>
+    <string name="sjal">Damian Fajfer - to ja to napisałem!</string>
+    <string name="aboutName">O nas</string>
+    <string name="authors">Autorzy</string>
+    <string name="betno">Dominik Bednarz - odpowiedzialny za design. kocham go</string>
+    <string name="irv">Aleksandra Janik - aplikacja to jej pomysł, praktycznie całość informacji pochodzi od niej. dostarcza mi jedzenie pod nos</string>
+    <string name="thanks">O aplikacij</string>
+    <string name="thanksTo">Aplikacja została stworzona z myślą o studentach Akademii Muzycznej w Poznaniu z kierunku Lutnictwo Artystyczne. Osoby z drugiego poziomu szkoły muzycznej bądź hobbyści powinni również polubić tą aplikację. Aplikacja jest oczywiście darmowa, wszyscy wiemy ile kosztują narzędzia :D</string>
+    <string name="thanksToo">Oprogramowanie jest oparte na licencji MIT, ma również otwarty kod źródłowy który znaleźć można na GitHubie.</string>
 </resources>

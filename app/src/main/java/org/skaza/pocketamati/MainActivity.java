@@ -8,17 +8,19 @@ import android.view.View;
 public class MainActivity extends ActionBarActivity {
 
     /*
-        TODO: Kalkulator wymiarów
-        TODO: Gotowe wymiary małych instrumentów
-        TODO: Instrukcje z ilustracjami wykonania elementów i Receptury lakierów
-        TODO: Galeria dokumentacji
-        TODO: Notatki
-
-        TODO: Cechy stylistyczne najwazniejszych twórców, bio
-        TODO: Emisja herzów do strojenia skrzypków i Mini-pianinko jedna oktawa
-        TODO: Książka adresowa: dla np. dostawców drewna, innych lutników itp.
-        TODO: Wishlista narzedzi
-        TODO: Galeria drogich modeli skrzypiec
+        ***********ESSENTIALS**************
+        TODO: ***** Kalkulator wymiarów
+        TODO: ***** Gotowe wymiary małych instrumentów
+        TODO: ***** Instrukcje z ilustracjami wykonania elementów i Receptury lakierów
+        *************USEFUL****************
+        TODO: **** Cechy stylistyczne najwazniejszych twórców, bio
+        TODO: **** Emisja herzów do strojenia skrzypków i Mini-pianinko jedna oktawa
+        ***********************************
+        TODO: *** Galeria drogich modeli skrzypiec
+        ***********************************
+        TODO: ** Galeria dokumentacji
+        ***********************************
+        TODO: * Wishlista narzedzi
      */
 
     @Override
@@ -57,6 +59,9 @@ public class MainActivity extends ActionBarActivity {
     }
     public void switchToExpensive(View v) {
         startActivity(new Intent(getApplicationContext(), org.skaza.pocketamati.ExpensiveActivity.class));
+    }
+    public void switchToAbout(View v) {
+        startActivity(new Intent(getApplicationContext(), org.skaza.pocketamati.AboutActivity.class));
     }
 
 }

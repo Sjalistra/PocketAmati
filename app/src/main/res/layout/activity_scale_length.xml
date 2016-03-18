@@ -37,7 +37,7 @@
         android:layout_below="@+id/scaleLenghtViolinInput"
         android:layout_centerHorizontal="true"
         android:clickable="true"
-        android:onClick="@string/compute" />
+        android:onClick="Compute" />
 
     <TextView
         android:layout_width="wrap_content"

@@ -29,4 +29,12 @@
     <string name="neckLength">Neck:</string>
     <string name="boardLength">Board:</string>
     <string name="scaleLengthViolinDesc">Computed scale length equals</string>
+    <string name="aboutName">About</string>
+    <string name="authors">Authors</string>
+    <string name="sjal">Damian Fajfer - I wrote this!</string>
+    <string name="betno">Dominik Bednarz - Responsible for the design. He\'s a champ, love him</string>
+    <string name="irv">Aleksandra Janik - the app is basically her idea, fetched me all the data to create this. also fed me</string>
+    <string name="thanks">About the app</string>
+    <string name="thanksTo">This app was build especially for the students of the Music Academy on the Violin Making course in Poznan, Poland. People studying on similar lutherie courses could also find this app useful so here it is, for free. Because everyone knows how expensive your tools are :)</string>
+    <string name="thanksToo">The app is also free as in freedom. It runs on the MIT license and you can find the source on GitHub</string>
 </resources>

@@ -20,7 +20,8 @@
         <activity android:name=".BiosActivity" />
         <activity android:name=".ToysActivity" />
         <activity android:name=".ExpensiveActivity" />
-        <activity android:name=".CalculatorActivities.ScaleLengthActivity"></activity>
+        <activity android:name=".CalculatorActivities.ScaleLengthActivity" />
+        <activity android:name=".AboutActivity"></activity>
     </application>
 
 </manifest>

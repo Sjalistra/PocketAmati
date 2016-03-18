@@ -16,7 +16,6 @@ public class BiosActivity extends ActionBarActivity {
     public void amatiGo(View v) {
 
     }
-
     public void stradivariGo(View v) {
 
     }

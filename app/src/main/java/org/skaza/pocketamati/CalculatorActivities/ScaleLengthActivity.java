@@ -1,11 +1,13 @@
 package org.skaza.pocketamati.CalculatorActivities;
 
+import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.skaza.pocketamati.R;
 import org.w3c.dom.Text;
@@ -28,10 +30,24 @@ public class ScaleLengthActivity extends ActionBarActivity {
         buttonCompute.setEnabled(true);
 
         EditText boardLengthText = (EditText) findViewById(R.id.scaleLenghtViolinInput);
-        boardLength = Double.parseDouble(boardLengthText.getText().toString());
-
+        if (boardLengthText.toString().matches("\\d+(\\.\\d*)?|\\.\\d+")) {
+            boardLength = Double.parseDouble(boardLengthText
+                    .getText()
+                    .toString());
+        } else {
+            Context context = getApplicationContext();
+            CharSequence text = "Incorrect value";
+            int length = Toast.LENGTH_SHORT;
+            Toast error = Toast.makeText(context, text, length);
+            error.show();
+        }
+// 0.181 is const.
+// x2 is a standard multiplier for a neck and x3 for a board
         neckScaleLength = boardLength * 0.181 * 2;
         boardScaleLength = boardLength * 0.181 * 3;
+// Scale length for 3 digits after the dot
+        boardScaleLength = Math.floor(boardScaleLength * 1000) / 1000;
+        neckScaleLength = Math.floor(neckScaleLength * 1000) / 1000;
 
         TextView neck = (TextView) findViewById(R.id.neckComputed);
         TextView board = (TextView) findViewById(R.id.boardComputed);
