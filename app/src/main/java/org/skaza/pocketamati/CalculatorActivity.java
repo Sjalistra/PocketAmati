@@ -19,4 +19,14 @@ public class CalculatorActivity extends ActionBarActivity {
                 org.skaza.pocketamati.CalculatorActivities.ScaleLengthActivity.class));
 
     }
+    public void switchToFingerboardLengthViolin(View v) {
+        startActivity(new Intent(getApplicationContext(),
+                org.skaza.pocketamati.CalculatorActivities.FingerBoardViolinActivity.class));
+
+    }
+    public void switchToFingerboardLengthViola(View v) {
+        startActivity(new Intent(getApplicationContext(),
+                org.skaza.pocketamati.CalculatorActivities.FingerBoardViolaActivity.class));
+
+    }
 }

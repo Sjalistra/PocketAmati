@@ -7,21 +7,24 @@ import android.view.View;
 
 public class MainActivity extends ActionBarActivity {
 
-    /*
-        ***********ESSENTIALS**************
-        TODO: ***** Kalkulator wymiarów
-        TODO: ***** Gotowe wymiary małych instrumentów
-        TODO: ***** Instrukcje z ilustracjami wykonania elementów i Receptury lakierów
+        /***********ESSENTIALS*************
+        * TODO: ***** Calculators
+        * TODO: ***** Measurements for smaller instruments
+        * TODO: ***** Instructions for crafting instrument components and varnishes
         *************USEFUL****************
-        TODO: **** Cechy stylistyczne najwazniejszych twórców, bio
-        TODO: **** Emisja herzów do strojenia skrzypków i Mini-pianinko jedna oktawa
+        * TODO: **** Bios, info about the luthiers style
+        * TODO: **** Herz emission, a portable piano with just one scale
         ***********************************
-        TODO: *** Galeria drogich modeli skrzypiec
+        * TODO: *** Gallery of expensive instruments
         ***********************************
-        TODO: ** Galeria dokumentacji
+        * TODO: ** Documentation gallery
         ***********************************
-        TODO: * Wishlista narzedzi
-     */
+        * TODO: * Tools wishlist
+        *************CODE**FIXES***********
+        * TODO: All instances of 'scale length' into 'stop length' as I incorrectly translated it
+        * TODO: ID of layout activities of Calculator Activities to be done properly
+        * TODO: Comments on the code (calculators)
+        */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
