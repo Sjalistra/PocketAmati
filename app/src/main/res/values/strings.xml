@@ -4,11 +4,9 @@
     <string name="calcName">Calculator</string>
     <string name="measureName">Measurements</string>
     <string name="craftName">Crafting</string>
-    <string name="galleryName">Documentation</string>
     <string name="notesName">Notes</string>
     <string name="biosName">Bios</string>
-    <string name="toysName" translatable="false">Tuner</string>
-    <string name="addressBookName">Address Book</string>
+    <string name="toysName">Toys</string>
     <string name="wishlistName">Wishlist</string>
     <string name="expGalleryName">Expensive Instruments</string>
     <string name="aboutName">About</string>
@@ -16,11 +14,9 @@
     <string name="calcDesc">Calculators for Luthiers</string>
     <string name="measureDesc">Prebuild measurements</string>
     <string name="craftDesc">Recipes and more</string>
-    <string name="galleryDesc">Documentation gallery</string>
     <string name="notesDesc">Your personal notes</string>
     <string name="biosDesc">Bios of famous luthiers and other history related stuff</string>
     <string name="toysDesc">Helpful for tuning your violin and to check stuff up</string>
-    <string name="addressBookDesc">Address Book</string>
     <string name="wishlistDesc">Wishlist for your tools</string>
     <string name="expGalleryDesc">Gallery with expensive violins and such</string>
     <!-- Calculator Activity -->

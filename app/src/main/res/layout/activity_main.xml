@@ -48,82 +48,21 @@
         android:layout_below="@+id/measurements"
         android:layout_alignParentLeft="true"
         android:contentDescription="@string/craftDesc" /> <!-- [0%] Crafting -->
-    <ImageButton
-        android:id="@+id/gallery"
-        android:onClick="switchToGallery"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_menu_today"
-        android:clickable="false"
-        android:layout_below="@+id/crafting"
-        android:layout_alignParentLeft="true"
-        android:contentDescription="@string/galleryDesc" /> <!-- [0%] Gallery -->
-    <ImageButton
-        android:id="@+id/notes"
-        android:onClick="switchToNotes"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_menu_send"
-        android:clickable="false"
-        android:layout_below="@+id/gallery"
-        android:layout_alignParentLeft="true"
-        android:contentDescription="@string/notesDesc" /> <!-- [0%] Notes -->
-    <ImageButton
-        android:id="@+id/bios"
-        android:onClick="switchToBios"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_menu_compass"
-        android:layout_below="@+id/notes"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/biosDesc"
-        android:clickable="true" /> <!-- [6%] Bios -->
-    <ImageButton
-        android:id="@+id/toys"
-        android:onClick="switchToToys"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_menu_rotate"
-        android:layout_below="@+id/bios"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/toysDesc" /> <!-- [0%] Toys -->
-    <ImageButton
-        android:id="@+id/adressBook"
-        android:onClick="switchToAddressBook"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_menu_sort_alphabetically"
-        android:layout_below="@+id/toys"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/addressBookDesc" /> <!-- [0%] Address Book -->
-    <ImageButton
-        android:id="@+id/wishlist"
-        android:onClick="switchToWish"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_menu_mapmode"
-        android:layout_below="@+id/adressBook"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/wishlistDesc" /> <!-- [0%] Wishlist -->
-    <ImageButton
-        android:id="@+id/expensiveGallery"
-        android:onClick="switchToExpensive"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_menu_always_landscape_portrait"
-        android:layout_below="@+id/wishlist"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/expGalleryDesc" /> <!-- [0%] Expensive Gallery -->
+    <!-- [0%] Notes -->
+    <!-- [6%] Bios -->
+    <!-- [0%] Toys -->
+    <!-- [0%] Wishlist -->
+    <!-- [0%] Expensive Gallery -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/aboutName"
         android:id="@+id/about"
-        android:layout_below="@+id/expensiveGallery"
         android:layout_centerHorizontal="true"
         android:clickable="true"
-        android:onClick="switchToAbout" />    <!-- [100%] About -->
+        android:onClick="switchToAbout"
+        android:layout_below="@+id/crafting" />    <!-- [100%] About -->
 
 </RelativeLayout>
 </ScrollView>

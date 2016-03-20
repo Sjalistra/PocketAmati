@@ -7,24 +7,26 @@ import android.view.View;
 
 public class MainActivity extends ActionBarActivity {
 
-        /***********ESSENTIALS*************
-        * TODO: ***** Calculators
-        * TODO: ***** Measurements for smaller instruments
-        * TODO: ***** Instructions for crafting instrument components and varnishes
-        *************USEFUL****************
-        * TODO: **** Bios, info about the luthiers style
-        * TODO: **** Herz emission, a portable piano with just one scale
+        /**********************************
+        * TODO: 1.0
+        * TODO: Calculators
+        * TODO: Measurements for smaller instruments
+        * TODO: Instructions for crafting instrument components and varnishes
         ***********************************
-        * TODO: *** Gallery of expensive instruments
+        * TODO: 2.0
+        * TODO: Bios, info about the luthiers style
+        * TODO: Herz emission, a portable piano with just one scale
         ***********************************
-        * TODO: ** Documentation gallery
+        * TODO: THE IDEAS
+        * TODO: Gallery of expensive instruments
+        * TODO: Tools wishlist
         ***********************************
-        * TODO: * Tools wishlist
-        *************CODE**FIXES***********
+        * TODO: FIXES
         * TODO: All instances of 'scale length' into 'stop length' as I incorrectly translated it
         * TODO: ID of layout activities of Calculator Activities to be done properly
         * TODO: Comments on the code (calculators)
-        */
+        * TODO: [Calc] Compute on done
+        **********************************/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
