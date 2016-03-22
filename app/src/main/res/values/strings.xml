@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">Pocket Amati</string>
     <!-- Main Activity -->
-    <string name="calcName">Calculator</string>
+    <string name="calcName">Calculators</string>
     <string name="measureName">Measurements</string>
     <string name="craftName">Crafting</string>
     <string name="notesName">Notes</string>

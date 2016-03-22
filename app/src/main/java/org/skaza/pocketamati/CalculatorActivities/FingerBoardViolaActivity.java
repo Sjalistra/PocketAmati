@@ -3,7 +3,9 @@ package org.skaza.pocketamati.CalculatorActivities;
 import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -46,8 +48,8 @@ public class FingerBoardViolaActivity extends ActionBarActivity {
             Toast error = Toast.makeText(context, text, length);
             error.show();
         }
-// 5/6 of the stop length = fingerboard length
-        fingerboardLength = (boardLength * 0.181 * 3 * 5) / 6;
+// 5/6 of the sum of board stop length and neck stop length = fingerboard length
+        fingerboardLength = (((boardLength * 0.181 * 3) + (boardLength * 0.181 * 2)) * 5) / 6;
 // Fingerboard length for 3 digits after the dot
         fingerboardLength = Math.floor(fingerboardLength * 1000) / 1000;
 
@@ -56,5 +58,6 @@ public class FingerBoardViolaActivity extends ActionBarActivity {
 
         fingerboardTextView.setText(fingerboardLengthText);
         fingerboardTextView.invalidate();
+
     }
 }

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ffcf27">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -19,10 +20,14 @@
         android:id="@+id/authors"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="7.5dip"
+        android:layout_marginLeft="15dip"
+        android:textColor="#ac560c" />
 
     <TextView
         android:layout_width="wrap_content"
+        android:textColor="#ac560c"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/sjal"
@@ -31,22 +36,29 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:clickable="true"
-        android:onClick="sjal" />
+        android:onClick="sjal"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip" />
 
     <TextView
         android:layout_width="wrap_content"
+        android:textColor="#ac560c"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/betno"
         android:id="@+id/db"
         android:onClick="betno"
         android:clickable="true"
-        android:layout_marginTop="25dp"
         android:layout_below="@+id/df"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip" />
 
     <TextView
+        android:textColor="#ac560c"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -54,31 +66,40 @@
         android:id="@+id/aj"
         android:clickable="true"
         android:onClick="irv"
-        android:layout_marginTop="32dp"
         android:layout_below="@+id/db"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/thanks"
+        android:textColor="#ac560c"
         android:id="@+id/textView"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/aj"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="7.5dip"
+        android:layout_marginTop="25dip"
+        android:layout_marginLeft="15dip" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#ac560c"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/thanksTo"
         android:id="@+id/textView2"
-        android:layout_below="@+id/aj"
+        android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="43dp" />
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -88,7 +109,10 @@
         android:id="@+id/textView3"
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:textColor="#ac560c"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="15dip"
+        android:layout_marginLeft="15dip" />
 
 </RelativeLayout>
     </ScrollView>

@@ -1,9 +1,15 @@
 package org.skaza.pocketamati;
 
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
+
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -25,14 +31,22 @@ public class MainActivity extends ActionBarActivity {
         * TODO: All instances of 'scale length' into 'stop length' as I incorrectly translated it
         * TODO: ID of layout activities of Calculator Activities to be done properly
         * TODO: Comments on the code (calculators)
-        * TODO: [Calc] Compute on done
+        * TODO: [Calcs] Compute on done
         **********************************/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
+                .setDefaultFontPath("fonts/WorkSans-Medium.ttf")
+                .setFontAttrId(R.attr.fontPath)
+                .build());
 
+    }
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
     public void switchToCalc(View v) {
@@ -44,9 +58,6 @@ public class MainActivity extends ActionBarActivity {
     public void switchToCraft(View v) {
         startActivity(new Intent(getApplicationContext(), org.skaza.pocketamati.CraftingActivity.class));
     }
-    public void switchToGallery(View v) {
-
-    }
     public void switchToNotes(View v) {
 
     }
@@ -55,9 +66,6 @@ public class MainActivity extends ActionBarActivity {
     }
     public void switchToToys(View v) {
         startActivity(new Intent(getApplicationContext(), org.skaza.pocketamati.ToysActivity.class));
-    }
-    public void switchToAddressBook(View v) {
-
     }
     public void switchToWish(View v) {
 

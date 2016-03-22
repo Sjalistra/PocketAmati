@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="false"
-    android:onClick="switchToFingerboardLengthViolin">
+    android:onClick="switchToFingerboardLengthViolin"
+    android:background="#ffcf27">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -25,7 +26,21 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:onClick="switchToScaleLengthViolin"
-            android:clickable="true" />
+            android:clickable="true"
+            android:textColor="#ac560c"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#b29722"
+            android:layout_below="@+id/scaleLengthViolinView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/div1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -37,7 +52,21 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:clickable="true"
-            android:onClick="switchToFingerboardLengthViolin" />
+            android:onClick="switchToFingerboardLengthViolin"
+            android:textColor="#ac560c"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b29722"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/fingerboardLengthViola"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/div3" />
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -49,7 +78,23 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:onClick="switchToFingerboardLengthViola"
-            android:clickable="true" />
+            android:clickable="true"
+            android:textColor="#ac560c"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#b29722"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fingerboardLengthViolin"
+            android:id="@+id/div2"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
     </RelativeLayout>
 
 </ScrollView>
