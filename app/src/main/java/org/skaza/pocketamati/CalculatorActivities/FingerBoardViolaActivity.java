@@ -24,16 +24,16 @@ public class FingerBoardViolaActivity extends ActionBarActivity {
 
     }
 
-    double fingerboardLength = 0;
+    double fingerboardLengthDouble = 0;
     double boardLength = 0;
+    int fingerboardLength = 0;
+    int fingerboardLengthFinale = 0;
 
     public void Compute(View v) {
-        Button buttonCompute = (Button) findViewById(R.id.computeScaleLengthViolin);
-        buttonCompute.setEnabled(true);
         InputMethodManager inputManager = (InputMethodManager) getSystemService(this.INPUT_METHOD_SERVICE);
         inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
 
-        EditText boardLengthText = (EditText) findViewById(R.id.scaleLenghtViolinInput);
+        EditText boardLengthText = (EditText) findViewById(R.id.fingerboardLengthViolaInput);
         if (boardLengthText
                 .getText()
                 .toString()
@@ -48,16 +48,24 @@ public class FingerBoardViolaActivity extends ActionBarActivity {
             Toast error = Toast.makeText(context, text, length);
             error.show();
         }
-// 5/6 of the sum of board stop length and neck stop length = fingerboard length
-        fingerboardLength = (((boardLength * 0.181 * 3) + (boardLength * 0.181 * 2)) * 5) / 6;
-// Fingerboard length for 3 digits after the dot
-        fingerboardLength = Math.floor(fingerboardLength * 1000) / 1000;
 
-        TextView fingerboardTextView = (TextView) findViewById(R.id.neckComputed);
+        fingerboardLengthDouble = (((boardLength * 0.181 * 3) + (boardLength * 0.181 * 2)) * 5) / 6;
+        fingerboardLength = (int) fingerboardLengthDouble;
+
+        fingerboardLengthDouble = (Math.floor(((Math.floor(fingerboardLengthDouble * 1000) / 1000)
+                - fingerboardLength) * 1000) / 1000) * 1000;
+        fingerboardLengthFinale = (int) fingerboardLengthDouble;
+
+        TextView fingerboardTextView = (TextView) findViewById(R.id.fingerboardComputed);
+        TextView fingerboard2TextView = (TextView) findViewById(R.id.fingerboardComputed2);
         String fingerboardLengthText = String.valueOf(fingerboardLength);
+        String fingerboardLengthFinaleText = String.valueOf(fingerboardLengthFinale);
 
         fingerboardTextView.setText(fingerboardLengthText);
+        fingerboard2TextView.setText(fingerboardLengthFinaleText);
+
         fingerboardTextView.invalidate();
+        fingerboard2TextView.invalidate();
 
     }
 }

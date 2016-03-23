@@ -10,66 +10,137 @@
     tools:context="org.skaza.pocketamati.CalculatorActivities.FingerBoardViolinActivity"
     android:background="#ffcf27">
 
+    <ImageView
+    android:adjustViewBounds="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/bar"
+    android:src="@drawable/passssssk"
+    android:layout_marginTop="40dp"
+    android:layout_below="@+id/inputTextView"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp" />
+    <ImageView
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bg"
+        android:src="@drawable/bckgrnd"
+        android:layout_below="@+id/bar"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
     <TextView
+        android:textColor="#AB7E0C"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/giveMeData"
         android:id="@+id/inputTextView"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp" />
     <EditText
+        android:layout_alignLeft="@+id/bar"
+        android:layout_alignTop="@+id/bar"
+        android:layout_alignRight="@+id/bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:id="@+id/scaleLenghtViolinInput"
-        android:layout_below="@+id/inputTextView"
-        android:layout_centerHorizontal="true"
+        android:id="@+id/fingerboardLengthViolinInput"
         android:digits="0123456789."
-        android:inputType="text"
-        android:imeOptions="actionDone"/>
-
-
-    <Button
+        android:inputType="numberDecimal"
+        android:imeOptions="actionDone"
+        android:layout_below="@+id/inputTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="150dp"
+        android:layout_marginLeft="30dp"
+        android:layout_above="@+id/bg" />
+    <TextView
+        android:id="@+id/computeFingerboardLengthViolin"
+        android:textSize="19dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bar"
+        android:layout_alignTop="@+id/bar"
+        android:layout_alignRight="@+id/bar"
+        android:layout_alignBottom="@+id/bar"
+        android:gravity="center"
         android:text="@string/compute"
-        android:id="@+id/computeScaleLengthViolin"
-        android:layout_below="@+id/scaleLenghtViolinInput"
-        android:layout_centerHorizontal="true"
+        android:textColor="#ffcf27"
         android:clickable="true"
-        android:onClick="Compute" />
+        android:onClick="Compute"
+        android:layout_marginLeft="195dp" />
 
     <TextView
+        android:textColor="#c2a55b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/fingerboardLengthDesc"
-        android:id="@+id/neckView"
-        android:layout_marginTop="92dp"
-        android:layout_below="@+id/computeScaleLengthViolin"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/fingerboardView"
+        android:layout_below="@+id/explainerFingerboardLenghtViolin"
+        android:layout_alignLeft="@+id/explainerFingerboardLenghtViolin"
+        android:layout_alignStart="@+id/explainerFingerboardLenghtViolin"
+        android:layout_marginTop="13dp" />
+
 
     <TextView
+        android:textColor="#ac560c"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="0"
-        android:id="@+id/neckComputed"
-        android:layout_alignTop="@+id/neckView"
-        android:layout_alignRight="@+id/computeScaleLengthViolin"
-        android:layout_alignEnd="@+id/computeScaleLengthViolin" />
+        android:id="@+id/fingerboardComputed"
+        android:layout_below="@+id/fingerboardView"
+        android:layout_alignLeft="@+id/fingerboardView"
+        android:layout_alignStart="@+id/fingerboardView" />
+
 
     <TextView
+        android:textColor="#c2a55b"
+        android:layout_alignLeft="@+id/bg"
+        android:layout_alignTop="@+id/bg"
+        android:layout_alignRight="@+id/bg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/fingerboardLengthViolinDesc"
-        android:id="@+id/explainerScaleLenghtViolin"
-        android:layout_above="@+id/neckComputed"
-        android:layout_alignLeft="@+id/scaleLenghtViolinInput"
-        android:layout_alignStart="@+id/scaleLenghtViolinInput"
-        android:layout_marginBottom="34dp" />
+        android:id="@+id/explainerFingerboardLenghtViolin"
+        android:layout_below="@+id/bar"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
+    <TextView
+        android:textColor="#ac560c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/dotFingerboard"
+        android:layout_below="@+id/fingerboardView"
+        android:layout_toRightOf="@+id/fingerboardComputed"
+        android:layout_toEndOf="@+id/fingerboardComputed"
+        android:text="."
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:textColor="#ac560c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/fingerboardComputed2"
+        android:text="0"
+        android:layout_alignTop="@+id/dotFingerboard"
+        android:layout_toRightOf="@+id/dotFingerboard"
+        android:layout_toEndOf="@+id/dotFingerboard" />
+
 </RelativeLayout>

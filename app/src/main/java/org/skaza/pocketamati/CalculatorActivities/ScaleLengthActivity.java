@@ -1,18 +1,15 @@
 package org.skaza.pocketamati.CalculatorActivities;
 
 import android.content.Context;
-import android.support.annotation.IntegerRes;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import org.skaza.pocketamati.R;
-import org.w3c.dom.Text;
 
 public class ScaleLengthActivity extends ActionBarActivity {
 
@@ -28,8 +25,8 @@ public class ScaleLengthActivity extends ActionBarActivity {
     double bodyLength = 0;
     int neckScaleLength = 0;
     int boardScaleLength = 0;
-    int neckScaleLengthDoubleFinale = 0;
-    int boardScaleLengthDoubleFinale = 0;
+    int neckScaleLengthFinale = 0;
+    int boardScaleLengthFinale = 0;
 
     public void Compute(View v) {
         InputMethodManager inputManager = (InputMethodManager) getSystemService(this.INPUT_METHOD_SERVICE);
@@ -64,9 +61,8 @@ public class ScaleLengthActivity extends ActionBarActivity {
         neckScaleLengthDouble = (Math.floor(((Math.floor(neckScaleLengthDouble * 1000) / 1000)
                 - neckScaleLength) * 1000) / 1000) * 1000;
 
-        boardScaleLengthDoubleFinale = (int) boardScaleLengthDouble;
-        neckScaleLengthDoubleFinale = (int) neckScaleLengthDouble;
-
+        boardScaleLengthFinale = (int) boardScaleLengthDouble;
+        neckScaleLengthFinale = (int) neckScaleLengthDouble;
 
         TextView neckTextView = (TextView) findViewById(R.id.neckComputed);
         TextView boardTextView = (TextView) findViewById(R.id.boardComputed);
@@ -75,8 +71,8 @@ public class ScaleLengthActivity extends ActionBarActivity {
 
         String neckScaleLengthText = String.valueOf(neckScaleLength);
         String boardScaleLengthText = String.valueOf(boardScaleLength);
-        String neckScaleLengthTextDouble = String.valueOf(neckScaleLengthDoubleFinale);
-        String boardScaleLengthTextDouble = String.valueOf(boardScaleLengthDoubleFinale);
+        String neckScaleLengthTextDouble = String.valueOf(neckScaleLengthFinale);
+        String boardScaleLengthTextDouble = String.valueOf(boardScaleLengthFinale);
 
         neckTextView.setText(neckScaleLengthText);
         boardTextView.setText(boardScaleLengthText);
@@ -89,5 +85,4 @@ public class ScaleLengthActivity extends ActionBarActivity {
         boardTextViewDouble.invalidate();
 
     }
-
 }
