@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="false"
-    android:onClick="switchToFingerboardLengthViolin"
     android:background="#ffcf27">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -20,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/scaleLengthViolin"
+            android:text="@string/stopLength"
             android:id="@+id/scaleLengthViolinView"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
@@ -46,7 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/fingerboardLengthViolin"
+            android:text="@string/fingerboardLength"
             android:id="@+id/fingerboardLengthViolin"
             android:layout_below="@+id/scaleLengthViolinView"
             android:layout_alignParentLeft="true"
@@ -72,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/fingerboardLengthViola"
+            android:text="@string/fingerboardLength"
             android:id="@+id/fingerboardLengthViola"
             android:layout_below="@+id/fingerboardLengthViolin"
             android:layout_alignParentLeft="true"
@@ -94,6 +93,43 @@
             android:layout_marginLeft="5dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:onClick="switchToScaleLengthViolin"
+            android:clickable="true"
+            android:textColor="#AB7E0C"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/violin"
+            android:id="@+id/stplViolin"
+            android:layout_alignTop="@+id/scaleLengthViolinView"
+            android:layout_toRightOf="@+id/scaleLengthViolinView"
+            android:layout_marginLeft="4dp" />
+        <TextView
+            android:onClick="switchToFingerboardLengthViola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/viola"
+            android:id="@+id/fgbdlViola"
+            android:clickable="true"
+            android:layout_alignTop="@+id/fingerboardLengthViola"
+            android:layout_toRightOf="@+id/fingerboardLengthViola"
+            android:layout_marginLeft="4dp"
+            android:textColor="#AB7E0C"/>
+        <TextView
+            android:onClick="switchToFingerboardLengthViolin"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/violin"
+            android:id="@+id/fbgdlViolin"
+            android:layout_alignTop="@+id/fingerboardLengthViolin"
+            android:layout_toRightOf="@+id/fingerboardLengthViolin"
+            android:layout_marginLeft="4dp"
+            android:textColor="#AB7E0C"/>
 
     </RelativeLayout>
 

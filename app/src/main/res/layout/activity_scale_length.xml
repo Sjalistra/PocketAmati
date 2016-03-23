@@ -10,87 +10,159 @@
     tools:context="org.skaza.pocketamati.CalculatorActivities.ScaleLengthActivity"
     android:background="#ffcf27">
 
+    <ImageView
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
+        android:src="@drawable/passssssk"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/inputTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+    <ImageView
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bg"
+        android:src="@drawable/bckgrnd"
+        android:layout_below="@+id/bar"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
     <TextView
+        android:textColor="#AB7E0C"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/giveMeData"
         android:id="@+id/inputTextView"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp" />
     <EditText
+        android:layout_alignLeft="@+id/bar"
+        android:layout_alignTop="@+id/bar"
+        android:layout_alignRight="@+id/bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:id="@+id/scaleLenghtViolinInput"
-        android:layout_below="@+id/inputTextView"
-        android:layout_centerHorizontal="true"
         android:digits="0123456789."
-        android:inputType="text"
-        android:imeOptions="actionDone"/>
-
-
-    <Button
+        android:inputType="numberDecimal"
+        android:imeOptions="actionDone"
+        android:layout_below="@+id/inputTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="150dp"
+        android:layout_marginLeft="30dp"
+        android:layout_above="@+id/bg" />
+    <TextView
+        android:id="@+id/computeStopLengthViolin"
+        android:textSize="19dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bar"
+        android:layout_alignTop="@+id/bar"
+        android:layout_alignRight="@+id/bar"
+        android:layout_alignBottom="@+id/bar"
+        android:gravity="center"
         android:text="@string/compute"
-        android:id="@+id/computeScaleLengthViolin"
-        android:layout_below="@+id/scaleLenghtViolinInput"
-        android:layout_centerHorizontal="true"
+        android:textColor="#ffcf27"
         android:clickable="true"
-        android:onClick="Compute" />
+        android:onClick="Compute"
+        android:layout_marginLeft="195dp" />
 
     <TextView
+        android:textColor="#c2a55b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/neckLength"
         android:id="@+id/neckView"
-        android:layout_marginTop="92dp"
-        android:layout_below="@+id/computeScaleLengthViolin"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/explainerScaleLenghtViolin"
+        android:layout_alignLeft="@+id/explainerScaleLenghtViolin"
+        android:layout_alignStart="@+id/explainerScaleLenghtViolin"
+        android:layout_marginTop="20dp" />
 
     <TextView
+        android:textColor="#c2a55b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/boardLength"
         android:id="@+id/boardView"
-        android:layout_marginTop="37dp"
-        android:layout_below="@+id/neckView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignTop="@+id/neckView"
+        android:layout_toRightOf="@+id/neckView"
+        android:layout_toEndOf="@+id/neckView"
+        android:layout_marginLeft="50dp" />
 
     <TextView
+        android:textColor="#ac560c"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="0"
         android:id="@+id/neckComputed"
-        android:layout_above="@+id/boardView"
-        android:layout_toRightOf="@+id/computeScaleLengthViolin"
-        android:layout_toEndOf="@+id/computeScaleLengthViolin" />
+        android:layout_below="@+id/neckView"
+        android:layout_alignLeft="@+id/neckView"
+        android:layout_alignStart="@+id/neckView" />
 
     <TextView
+        android:textColor="#ac560c"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="0"
         android:id="@+id/boardComputed"
-        android:layout_alignTop="@+id/boardView"
-        android:layout_alignLeft="@+id/neckComputed"
-        android:layout_alignStart="@+id/neckComputed" />
+        android:layout_alignBaseline="@+id/neckComputed"
+        android:layout_alignBottom="@+id/neckComputed"
+        android:layout_alignLeft="@+id/boardView"
+        android:layout_alignStart="@+id/boardView" />
 
     <TextView
+        android:textColor="#c2a55b"
+        android:layout_alignLeft="@+id/bg"
+        android:layout_alignTop="@+id/bg"
+        android:layout_alignRight="@+id/bg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/scaleLengthViolinDesc"
         android:id="@+id/explainerScaleLenghtViolin"
-        android:layout_above="@+id/neckComputed"
-        android:layout_alignLeft="@+id/scaleLenghtViolinInput"
-        android:layout_alignStart="@+id/scaleLenghtViolinInput"
-        android:layout_marginBottom="34dp" />
+        android:layout_below="@+id/bar"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
+    <TextView
+        android:textColor="#ac560c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/neckComputed2"
+        android:layout_below="@+id/neckView"
+        android:layout_toRightOf="@+id/neckComputed"
+        android:layout_toEndOf="@+id/neckComputed"
+        android:text=".0"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:textColor="#ac560c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=".0"
+        android:layout_marginTop="5dp"
+        android:id="@+id/bodyComputed2"
+        android:layout_below="@+id/boardView"
+        android:layout_toRightOf="@+id/boardComputed"
+        android:layout_toEndOf="@+id/boardComputed" />
 </RelativeLayout>

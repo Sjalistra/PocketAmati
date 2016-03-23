@@ -27,8 +27,6 @@ public class ScaleLengthActivity extends ActionBarActivity {
     double boardLength = 0;
 
     public void Compute(View v) {
-        Button buttonCompute = (Button) findViewById(R.id.computeScaleLengthViolin);
-        buttonCompute.setEnabled(true);
         InputMethodManager inputManager = (InputMethodManager) getSystemService(this.INPUT_METHOD_SERVICE);
         inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
 
