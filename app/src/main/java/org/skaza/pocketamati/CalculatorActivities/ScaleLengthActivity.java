@@ -1,6 +1,7 @@
 package org.skaza.pocketamati.CalculatorActivities;
 
 import android.content.Context;
+import android.support.annotation.IntegerRes;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,13 +23,15 @@ public class ScaleLengthActivity extends ActionBarActivity {
         setTitle(getResources().getText(R.string.scaleLengthViolin));
     }
 
-    double neckScaleLength = 0;
-    double boardScaleLength = 0;
-    double boardLength = 0;
+    double neckScaleLengthDouble = 0;
+    double boardScaleLengthDouble = 0;
+    double bodyLength = 0;
+    int neckScaleLength = 0;
+    int boardScaleLength = 0;
+    int neckScaleLengthDoubleFinale = 0;
+    int boardScaleLengthDoubleFinale = 0;
 
     public void Compute(View v) {
-        Button buttonCompute = (Button) findViewById(R.id.computeScaleLengthViolin);
-        buttonCompute.setEnabled(true);
         InputMethodManager inputManager = (InputMethodManager) getSystemService(this.INPUT_METHOD_SERVICE);
         inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
 
@@ -37,7 +40,7 @@ public class ScaleLengthActivity extends ActionBarActivity {
                 .getText()
                 .toString()
                 .matches("\\d+(\\.\\d*)?|\\.\\d+")) {
-            boardLength = Double.parseDouble(boardLengthText
+            bodyLength = Double.parseDouble(boardLengthText
                     .getText()
                     .toString());
         } else {
@@ -49,23 +52,42 @@ public class ScaleLengthActivity extends ActionBarActivity {
         }
 // 0.181 is const.
 // x2 is a standard multiplier for a neck and x3 for a board
-        neckScaleLength = boardLength * 0.181 * 2;
-        boardScaleLength = boardLength * 0.181 * 3;
-// Stop length for 3 digits after the dot
-        boardScaleLength = Math.floor(boardScaleLength * 1000) / 1000;
-        neckScaleLength = Math.floor(neckScaleLength * 1000) / 1000;
+        neckScaleLengthDouble = bodyLength * 0.181 * 2;
+        boardScaleLengthDouble = bodyLength * 0.181 * 3;
+        neckScaleLength = (int) neckScaleLengthDouble;
+        boardScaleLength = (int) boardScaleLengthDouble;
+
+// Looks like I don't know what I'm doing but it works!
+// It's getting the value after the dot appear nicely in the app
+        boardScaleLengthDouble = (Math.floor(((Math.floor(boardScaleLengthDouble * 1000) / 1000)
+                - boardScaleLength) * 1000) / 1000) * 1000;
+        neckScaleLengthDouble = (Math.floor(((Math.floor(neckScaleLengthDouble * 1000) / 1000)
+                - neckScaleLength) * 1000) / 1000) * 1000;
+
+        boardScaleLengthDoubleFinale = (int) boardScaleLengthDouble;
+        neckScaleLengthDoubleFinale = (int) neckScaleLengthDouble;
+
 
         TextView neckTextView = (TextView) findViewById(R.id.neckComputed);
         TextView boardTextView = (TextView) findViewById(R.id.boardComputed);
+        TextView neckTextViewDouble = (TextView) findViewById(R.id.neckComputed2);
+        TextView boardTextViewDouble = (TextView) findViewById(R.id.bodyComputed2);
 
         String neckScaleLengthText = String.valueOf(neckScaleLength);
         String boardScaleLengthText = String.valueOf(boardScaleLength);
+        String neckScaleLengthTextDouble = String.valueOf(neckScaleLengthDoubleFinale);
+        String boardScaleLengthTextDouble = String.valueOf(boardScaleLengthDoubleFinale);
 
         neckTextView.setText(neckScaleLengthText);
         boardTextView.setText(boardScaleLengthText);
+        neckTextViewDouble.setText(neckScaleLengthTextDouble);
+        boardTextViewDouble.setText(boardScaleLengthTextDouble);
 
         neckTextView.invalidate();
         boardTextView.invalidate();
+        neckTextViewDouble.invalidate();
+        boardTextViewDouble.invalidate();
+
     }
 
 }

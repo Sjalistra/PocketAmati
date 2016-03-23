@@ -20,16 +20,17 @@
     <string name="wishlistDesc">Wishlist for your tools</string>
     <string name="expGalleryDesc">Gallery with expensive violins and such</string>
     <!-- Calculator Activity -->
-    <string name="scaleLengthViolin">Stop Length (Violin)</string>
+    <string name="stopLength">Stop Length </string>
     <string name="giveMeData">Input body length</string>
     <string name="compute">Compute</string>
     <string name="neckLength">Neck:</string>
     <string name="boardLength">Body:</string>
-    <string name="scaleLengthViolinDesc">Computed stop length equals</string>
-    <string name="fingerboardLengthViolin">Fingerboard Length (Violin)</string>
+    <string name="scaleLengthViolinDesc">Computed stop length equals:</string>
+    <string name="fingerboardLength">Fingerboard Length </string>
     <string name="fingerboardLengthDesc">Fingerboard:</string>
-    <string name="fingerboardLengthViola">Fingerboard Length (Viola)</string>
-    <string name="fingerboardLengthViolinDesc">Computed fingerboard length equals</string>
+    <string name="fingerboardLengthViolinDesc">Computed fingerboard length equals:</string>
+    <string name="viola">(Viola)</string>
+    <string name="violin">(Violin)</string>
     <!-- Bios Activity -->
     <string name="houseAmati" translatable="false">Amati</string>
     <string name="houseStradivari" translatable="false">Stradivari</string>
