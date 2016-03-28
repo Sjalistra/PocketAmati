@@ -34,6 +34,7 @@ public class FingerBoardViolaActivity extends ActionBarActivity {
         inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
 
         EditText boardLengthText = (EditText) findViewById(R.id.fingerboardLengthViolaInput);
+
         if (boardLengthText
                 .getText()
                 .toString()

@@ -35,4 +35,11 @@
     <string name="fingerboardLengthViola">Długość podstrunnicy (Altówka)</string>
     <string name="fingerboardLengthViolin">Długość podstrunnicy (Skrzypce)</string>
     <string name="fingerboardLengthViolinDesc">Długość podstrunnicy wynosi</string>
+    <string name="celloName">Wiolonczela</string>
+    <string name="fingerboardLength">Długość podstrunnicy</string>
+    <string name="stopLength">Menzurka</string>
+    <string name="viola">(Wiolonczela)</string>
+    <string name="violaName">Wiolonczela</string>
+    <string name="violin">(Skrzypce)</string>
+    <string name="violinName">Skrzypce</string>
 </resources>

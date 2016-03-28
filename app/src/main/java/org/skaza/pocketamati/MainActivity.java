@@ -53,7 +53,7 @@ public class MainActivity extends ActionBarActivity {
         startActivity(new Intent(getApplicationContext(), org.skaza.pocketamati.CalculatorActivity.class));
     }
     public void switchToMeasure(View v) {
-
+        startActivity(new Intent(getApplicationContext(), org.skaza.pocketamati.MeasurementsActivity.class));
     }
     public void switchToCraft(View v) {
         startActivity(new Intent(getApplicationContext(), org.skaza.pocketamati.CraftingActivity.class));

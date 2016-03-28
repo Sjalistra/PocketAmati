@@ -95,8 +95,6 @@
             android:textSize="18dp" />
         <ImageView
             android:layout_width="wrap_content"
-            android:clickable="true"
-            android:onClick="switchToCraft"
             android:layout_height="wrap_content"
             android:id="@+id/crafting"
             android:layout_below="@+id/measurements"
@@ -120,8 +118,6 @@
             android:gravity="center"
             android:text="@string/craftName"
             android:textColor="#ac560c"
-            android:onClick="switchToCraft"
-            android:clickable="true"
             android:layout_marginLeft="60dp"
             android:textSize="18dp" />
         <TextView

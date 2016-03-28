@@ -31,6 +31,10 @@
     <string name="fingerboardLengthViolinDesc">Computed fingerboard length equals:</string>
     <string name="viola">(Viola)</string>
     <string name="violin">(Violin)</string>
+    <!-- Measurements Activity -->
+    <string name="violinName">Violin</string>
+    <string name="violaName">Viola</string>
+    <string name="celloName">Cello</string>
     <!-- Bios Activity -->
     <string name="houseAmati" translatable="false">Amati</string>
     <string name="houseStradivari" translatable="false">Stradivari</string>
