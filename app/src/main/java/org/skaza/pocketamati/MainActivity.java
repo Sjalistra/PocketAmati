@@ -58,9 +58,6 @@ public class MainActivity extends ActionBarActivity {
     public void switchToCraft(View v) {
         startActivity(new Intent(getApplicationContext(), org.skaza.pocketamati.CraftingActivity.class));
     }
-    public void switchToNotes(View v) {
-
-    }
     public void switchToBios(View v) {
         startActivity(new Intent(getApplicationContext(), org.skaza.pocketamati.BiosActivity.class));
     }

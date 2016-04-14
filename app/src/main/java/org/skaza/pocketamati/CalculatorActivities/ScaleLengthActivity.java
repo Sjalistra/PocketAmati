@@ -11,6 +11,9 @@ import android.widget.Toast;
 
 import org.skaza.pocketamati.R;
 
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 public class ScaleLengthActivity extends ActionBarActivity {
 
     @Override
@@ -18,6 +21,14 @@ public class ScaleLengthActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scale_length);
         setTitle(getResources().getText(R.string.scaleLengthViolin));
+        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
+                .setDefaultFontPath("fonts/WorkSans-Medium.ttf")
+                .setFontAttrId(R.attr.fontPath)
+                .build());
+    }
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
     double neckScaleLengthDouble = 0;

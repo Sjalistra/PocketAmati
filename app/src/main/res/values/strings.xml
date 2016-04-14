@@ -21,16 +21,27 @@
     <string name="expGalleryDesc">Gallery with expensive violins and such</string>
     <!-- Calculator Activity -->
     <string name="stopLength">Stop Length </string>
+    <string name="fingerboardLength">Fingerboard Length </string>
+    <string name="size">Size</string>
+    <string name="woodDensity">Wood Density</string>
     <string name="giveMeData">Input body length</string>
+    <string name="giveMeDatamm">Input body length (mm)</string>
+    <string name="gmdMass">Input wood mass</string>
+    <string name="gmdVolume">Input wood volume</string>
     <string name="compute">Compute</string>
     <string name="neckLength">Neck:</string>
     <string name="boardLength">Body:</string>
-    <string name="scaleLengthViolinDesc">Computed stop length equals:</string>
-    <string name="fingerboardLength">Fingerboard Length </string>
+    <string name="computedText">Length equals:</string>
+    <string name="computedDensity">Density equals:</string>
     <string name="fingerboardLengthDesc">Fingerboard:</string>
-    <string name="fingerboardLengthViolinDesc">Computed fingerboard length equals:</string>
+    <string name="densityEquals">Density:</string>
     <string name="viola">(Viola)</string>
     <string name="violin">(Violin)</string>
+    <string name="sizeViolin">Violin Size</string>
+    <string name="sizeEquals">Violin size is:</string>
+    <string name="sizeNull">0/4</string>
+    <string name="unitDensity">g/cm^3</string>
+    <string name="calcError">Incorrect value!</string>
     <!-- Measurements Activity -->
     <string name="violinName">Violin</string>
     <string name="violaName">Viola</string>

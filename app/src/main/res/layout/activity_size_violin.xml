@@ -7,21 +7,21 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="org.skaza.pocketamati.CalculatorActivities.FingerBoardViolinActivity"
+    tools:context="org.skaza.pocketamati.CalculatorActivities.SizeViolinActivity"
     android:background="#ffcf27">
 
     <ImageView
-    android:adjustViewBounds="true"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/bar"
-    android:src="@drawable/passssssk"
-    android:layout_marginTop="40dp"
-    android:layout_below="@+id/inputTextView"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true"
-    android:layout_marginLeft="15dp"
-    android:layout_marginRight="15dp" />
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
+        android:src="@drawable/passssssk"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/inputTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
     <ImageView
         android:adjustViewBounds="true"
         android:layout_width="wrap_content"
@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/giveMeData"
+        android:text="@string/giveMeDatamm"
         android:id="@+id/inputTextView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -54,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:id="@+id/fingerboardLengthViolinInput"
+        android:id="@+id/sizeViolinInput"
         android:digits="0123456789."
         android:inputType="numberDecimal"
         android:imeOptions="actionDone"
@@ -66,7 +66,7 @@
         android:layout_above="@+id/bg"
         android:background="@android:color/transparent"/>
     <TextView
-        android:id="@+id/computeFingerboardLengthViolin"
+        android:id="@+id/computeSizeViolin"
         android:textSize="19dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -83,65 +83,28 @@
 
     <TextView
         android:textColor="#c2a55b"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/fingerboardLengthDesc"
-        android:id="@+id/fingerboardView"
-        android:layout_below="@+id/explainerFingerboardLenghtViolin"
-        android:layout_alignLeft="@+id/explainerFingerboardLenghtViolin"
-        android:layout_alignStart="@+id/explainerFingerboardLenghtViolin"
-        android:layout_marginTop="20dp" />
-
-
-    <TextView
-        android:textColor="#ac560c"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="0"
-        android:id="@+id/fingerboardComputed"
-        android:layout_below="@+id/fingerboardView"
-        android:layout_alignLeft="@+id/fingerboardView"
-        android:layout_alignStart="@+id/fingerboardView" />
-
-
-    <TextView
-        android:textColor="#c2a55b"
         android:layout_alignLeft="@+id/bg"
         android:layout_alignTop="@+id/bg"
         android:layout_alignRight="@+id/bg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/computedText"
-        android:id="@+id/explainerFingerboardLenghtViolin"
+        android:text="@string/sizeEquals"
+        android:id="@+id/explainerSizeViolin"
         android:layout_below="@+id/bar"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp" />
 
     <TextView
-        android:textColor="#ac560c"
+        android:textColor="#c2a55b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:id="@+id/dotFingerboard"
-        android:layout_below="@+id/fingerboardView"
-        android:layout_toRightOf="@+id/fingerboardComputed"
-        android:layout_toEndOf="@+id/fingerboardComputed"
-        android:text="."
-        android:layout_marginTop="5dp" />
-
-    <TextView
-        android:textColor="#ac560c"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:id="@+id/fingerboardComputed2"
-        android:text="0"
-        android:layout_alignTop="@+id/dotFingerboard"
-        android:layout_toRightOf="@+id/dotFingerboard"
-        android:layout_toEndOf="@+id/dotFingerboard" />
-
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/sizeNull"
+        android:id="@+id/sizeView"
+        android:layout_below="@+id/explainerSizeViolin"
+        android:layout_alignLeft="@+id/explainerSizeViolin"
+        android:layout_alignStart="@+id/explainerSizeViolin"
+        android:layout_marginTop="20dp" />
 </RelativeLayout>

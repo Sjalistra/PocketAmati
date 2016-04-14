@@ -136,7 +136,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/scaleLengthViolinDesc"
+        android:text="@string/computedText"
         android:id="@+id/explainerFingerboardLenghtViolin"
         android:layout_below="@+id/bar"
         android:layout_marginTop="15dp"

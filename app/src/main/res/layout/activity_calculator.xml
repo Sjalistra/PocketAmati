@@ -6,14 +6,40 @@
     android:background="#ffcf27">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="org.skaza.pocketamati.CalculatorActivity">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/woodDensity"
+            android:text="@string/woodDensity"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="switchToWoodDensity"
+            android:clickable="true"
+            android:textColor="#ac560c"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#b29722"
+            android:layout_below="@+id/woodDensity"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/div0"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -21,15 +47,26 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/stopLength"
             android:id="@+id/scaleLengthViolinView"
-            android:layout_alignParentTop="true"
+            android:layout_below="@+id/woodDensity"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:onClick="switchToScaleLengthViolin"
             android:clickable="true"
             android:textColor="#ac560c"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:onClick="switchToScaleLengthViolin"
+            android:clickable="true"
+            android:textColor="#AB7E0C"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/violin"
+            android:id="@+id/stplViolin"
+            android:layout_marginLeft="4dp"
+            android:layout_alignTop="@+id/scaleLengthViolinView"
+            android:layout_toRightOf="@+id/scaleLengthViolinView" />
         <View
             android:layout_width="wrap_content"
             android:layout_height="1dp"
@@ -40,6 +77,7 @@
             android:id="@+id/div1"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp" />
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -56,6 +94,18 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp" />
+        <TextView
+            android:onClick="switchToFingerboardLengthViolin"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/violin"
+            android:id="@+id/fbgdlViolin"
+            android:layout_alignTop="@+id/fingerboardLengthViolin"
+            android:layout_toRightOf="@+id/fingerboardLengthViolin"
+            android:layout_marginLeft="4dp"
+            android:textColor="#AB7E0C"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -64,7 +114,7 @@
             android:layout_below="@+id/fingerboardLengthViola"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:id="@+id/div3" />
+            android:id="@+id/div2" />
 
 
         <TextView
@@ -82,30 +132,6 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp" />
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="1dp"
-            android:background="#b29722"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/fingerboardLengthViolin"
-            android:id="@+id/div2"
-            android:layout_marginLeft="5dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:onClick="switchToScaleLengthViolin"
-            android:clickable="true"
-            android:textColor="#AB7E0C"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/violin"
-            android:id="@+id/stplViolin"
-            android:layout_alignTop="@+id/scaleLengthViolinView"
-            android:layout_toRightOf="@+id/scaleLengthViolinView"
-            android:layout_marginLeft="4dp" />
         <TextView
             android:onClick="switchToFingerboardLengthViola"
             android:layout_width="wrap_content"
@@ -118,19 +144,97 @@
             android:layout_toRightOf="@+id/fingerboardLengthViola"
             android:layout_marginLeft="4dp"
             android:textColor="#AB7E0C"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#b29722"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fingerboardLengthViolin"
+            android:id="@+id/div3"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
         <TextView
-            android:onClick="switchToFingerboardLengthViolin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/fingerboardLength"
+            android:id="@+id/fingerboardLengthViola"
+            android:layout_below="@+id/fingerboardLengthViolin"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="switchToFingerboardLengthViola"
             android:clickable="true"
+            android:textColor="#ac560c"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp" />
+        <TextView
+            android:onClick="switchToFingerboardLengthViola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/viola"
+            android:id="@+id/fgbdlViola"
+            android:clickable="true"
+            android:layout_alignTop="@+id/fingerboardLengthViola"
+            android:layout_toRightOf="@+id/fingerboardLengthViola"
+            android:layout_marginLeft="4dp"
+            android:textColor="#AB7E0C"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#b29722"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fingerboardLengthViolin"
+            android:id="@+id/div4"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/size"
+            android:id="@+id/sizeViolin"
+            android:layout_below="@+id/fingerboardLengthViola"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="switchToSizeViolin"
+            android:clickable="true"
+            android:textColor="#ac560c"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp" />
+        <TextView
+            android:onClick="switchToSizeViolin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/violin"
-            android:id="@+id/fbgdlViolin"
-            android:layout_alignTop="@+id/fingerboardLengthViolin"
-            android:layout_toRightOf="@+id/fingerboardLengthViolin"
+            android:id="@+id/sizeViolinText"
+            android:clickable="true"
+            android:layout_alignTop="@+id/sizeViolin"
+            android:layout_toRightOf="@+id/sizeViolin"
             android:layout_marginLeft="4dp"
             android:textColor="#AB7E0C"/>
-
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#b29722"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/sizeViolin"
+            android:id="@+id/div5"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
     </RelativeLayout>
 
 </ScrollView>

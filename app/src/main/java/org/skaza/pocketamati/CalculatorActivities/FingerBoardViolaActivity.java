@@ -14,6 +14,9 @@ import android.widget.Toast;
 
 import org.skaza.pocketamati.R;
 
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 public class FingerBoardViolaActivity extends ActionBarActivity {
 
     @Override
@@ -21,7 +24,14 @@ public class FingerBoardViolaActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finger_board_viola);
         setTitle(getResources().getText(R.string.fingerboardLengthViola));
-
+        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
+                .setDefaultFontPath("fonts/WorkSans-Medium.ttf")
+                .setFontAttrId(R.attr.fontPath)
+                .build());
+    }
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
     double fingerboardLengthDouble = 0;

@@ -26,6 +26,11 @@ public class CalculatorActivity extends ActionBarActivity {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
+    public void switchToWoodDensity(View v) {
+        startActivity(new Intent(getApplicationContext(),
+                org.skaza.pocketamati.CalculatorActivities.WoodDensityActivity.class));
+
+    }
     public void switchToScaleLengthViolin(View v) {
         startActivity(new Intent(getApplicationContext(),
                 org.skaza.pocketamati.CalculatorActivities.ScaleLengthActivity.class));
@@ -39,6 +44,11 @@ public class CalculatorActivity extends ActionBarActivity {
     public void switchToFingerboardLengthViola(View v) {
         startActivity(new Intent(getApplicationContext(),
                 org.skaza.pocketamati.CalculatorActivities.FingerBoardViolaActivity.class));
+
+    }
+    public void switchToSizeViolin(View v) {
+        startActivity(new Intent(getApplicationContext(),
+                org.skaza.pocketamati.CalculatorActivities.SizeViolinActivity.class));
 
     }
 }

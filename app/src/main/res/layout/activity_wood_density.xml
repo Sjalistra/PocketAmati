@@ -7,21 +7,21 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="org.skaza.pocketamati.CalculatorActivities.FingerBoardViolinActivity"
+    tools:context="org.skaza.pocketamati.CalculatorActivities.WoodDensityActivity"
     android:background="#ffcf27">
 
     <ImageView
-    android:adjustViewBounds="true"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/bar"
-    android:src="@drawable/passssssk"
-    android:layout_marginTop="40dp"
-    android:layout_below="@+id/inputTextView"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true"
-    android:layout_marginLeft="15dp"
-    android:layout_marginRight="15dp" />
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
+        android:src="@drawable/passssssk"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/inputTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
     <ImageView
         android:adjustViewBounds="true"
         android:layout_width="wrap_content"
@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/giveMeData"
+        android:text="@string/gmdMass"
         android:id="@+id/inputTextView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -86,7 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/fingerboardLengthDesc"
+        android:text="@string/densityEquals"
         android:id="@+id/fingerboardView"
         android:layout_below="@+id/explainerFingerboardLenghtViolin"
         android:layout_alignLeft="@+id/explainerFingerboardLenghtViolin"
@@ -114,7 +114,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/computedText"
+        android:text="@string/computedDensity"
         android:id="@+id/explainerFingerboardLenghtViolin"
         android:layout_below="@+id/bar"
         android:layout_marginTop="15dp"
@@ -143,5 +143,17 @@
         android:layout_alignTop="@+id/dotFingerboard"
         android:layout_toRightOf="@+id/dotFingerboard"
         android:layout_toEndOf="@+id/dotFingerboard" />
+
+    <TextView
+        android:textColor="#ac560c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/unit"
+        android:text="@string/unitDensity"
+        android:layout_alignTop="@+id/fingerboardComputed2"
+        android:layout_toRightOf="@+id/fingerboardComputed2"
+        android:layout_toEndOf="@+id/fingerboardComputed2"
+        android:layout_marginLeft="5dp" />
 
 </RelativeLayout>
