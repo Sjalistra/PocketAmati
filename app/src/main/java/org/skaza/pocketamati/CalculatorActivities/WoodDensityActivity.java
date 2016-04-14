@@ -35,8 +35,6 @@ public class WoodDensityActivity extends ActionBarActivity {
     double massDouble = 0;
     double volumeDouble = 0;
     double densityDouble = 0;
-    int mass = 0;
-    int volume = 0;
     int density = 0;
     int densityFinale = 0;
 
