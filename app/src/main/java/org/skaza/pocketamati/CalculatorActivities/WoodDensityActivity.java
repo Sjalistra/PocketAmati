@@ -32,45 +32,43 @@ public class WoodDensityActivity extends ActionBarActivity {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
+    boolean hasChanged = false;
+    int density = 0;
+    int densityFinale = 0;
     double massDouble = 0;
     double volumeDouble = 0;
     double densityDouble = 0;
-    int density = 0;
-    int densityFinale = 0;
 
     public void Compute(View v) {
         InputMethodManager inputManager = (InputMethodManager) getSystemService(this.INPUT_METHOD_SERVICE);
         inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
 
-        EditText bodyLengthText = (EditText) findViewById(R.id.sizeViolinInput);
-        if (massDouble == 0) {
-            if (bodyLengthText
+        Context context = getApplicationContext();
+        CharSequence text = getResources().getString(R.string.calcError);
+        int length = Toast.LENGTH_SHORT;
+        Toast error = Toast.makeText(context, text, length);
+
+        EditText violinSizeText = (EditText) findViewById(R.id.sizeViolinInput);
+        if (!hasChanged) {
+            if (violinSizeText
                     .getText()
                     .toString()
                     .matches("\\d+(\\.\\d*)?|\\.\\d+")) {
-                massDouble = Double.parseDouble(bodyLengthText
+                massDouble = Double.parseDouble(violinSizeText
                         .getText()
                         .toString());
             } else {
-                Context context = getApplicationContext();
-                CharSequence text = getResources().getString(R.string.calcError);
-                int length = Toast.LENGTH_SHORT;
-                Toast error = Toast.makeText(context, text, length);
                 error.show();
             }
         } else {
-            if (bodyLengthText
+            if (violinSizeText
                     .getText()
                     .toString()
                     .matches("\\d+(\\.\\d*)?|\\.\\d+")) {
-                volumeDouble = Double.parseDouble(bodyLengthText
+                volumeDouble = Double.parseDouble(violinSizeText
                         .getText()
                         .toString());
             } else {
-                Context context = getApplicationContext();
-                CharSequence text = getResources().getString(R.string.calcError);
-                int length = Toast.LENGTH_SHORT;
-                Toast error = Toast.makeText(context, text, length);
                 error.show();
             }
         }
@@ -97,6 +95,13 @@ public class WoodDensityActivity extends ActionBarActivity {
             density2TextView.invalidate();          }
 
         TextView sizeTextView = (TextView) findViewById(R.id.inputTextView);
-        sizeTextView.setText(R.string.gmdVolume);
+
+        if (hasChanged){
+            hasChanged = false;
+            sizeTextView.setText(R.string.gmdVolume);
+        } else {
+            hasChanged = true;
+            sizeTextView.setText(R.string.gmdMass);
+        }
     }
 }
