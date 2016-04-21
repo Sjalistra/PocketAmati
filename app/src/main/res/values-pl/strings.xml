@@ -19,8 +19,8 @@
     <string name="measureName">Wymiary</string>
     <string name="neckLength">Szyjka:</string>
     <string name="notesName">Notatki</string>
-    <string name="scaleLengthViolin">Menzura (Skrzypce)</string>
-    <string name="scaleLengthViolinDesc">Menzura wynosi</string>
+    <string name="stopLengthViolin">Menzura (Skrzypce)</string>
+    <string name="stopLengthViolinDesc">Menzura wynosi</string>
     <string name="toysName">Gadżety</string>
     <string name="wishlistName">Lista życzeń</string>
     <string name="sjal">Damian Fajfer - to ja to napisałem!</string>
