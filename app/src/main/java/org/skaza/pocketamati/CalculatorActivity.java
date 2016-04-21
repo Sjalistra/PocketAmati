@@ -6,6 +6,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import org.skaza.pocketamati.CalculatorActivities.StopLengthActivity;
+
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
@@ -31,9 +33,9 @@ public class CalculatorActivity extends ActionBarActivity {
                 org.skaza.pocketamati.CalculatorActivities.WoodDensityActivity.class));
 
     }
-    public void switchToScaleLengthViolin(View v) {
+    public void switchToStopLengthViolin(View v) {
         startActivity(new Intent(getApplicationContext(),
-                org.skaza.pocketamati.CalculatorActivities.ScaleLengthActivity.class));
+                StopLengthActivity.class));
 
     }
     public void switchToFingerboardLengthViolin(View v) {

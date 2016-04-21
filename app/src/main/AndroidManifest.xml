@@ -20,7 +20,7 @@
         <activity android:name=".BiosActivity" />
         <activity android:name=".ToysActivity" />
         <activity android:name=".ExpensiveActivity" />
-        <activity android:name=".CalculatorActivities.ScaleLengthActivity" />
+        <activity android:name=".CalculatorActivities.StopLengthActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".CalculatorActivities.FingerBoardViolinActivity" />
         <activity android:name=".CalculatorActivities.FingerBoardViolaActivity" />
