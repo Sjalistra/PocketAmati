@@ -77,6 +77,6 @@ public class FingerBoardViolaActivity extends ActionBarActivity {
 
         fingerboardTextView.invalidate();
         fingerboard2TextView.invalidate();
-
+        boardLengthText.setText("");
     }
 }

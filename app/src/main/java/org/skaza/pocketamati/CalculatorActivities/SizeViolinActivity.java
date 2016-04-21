@@ -72,5 +72,6 @@ public class SizeViolinActivity extends AppCompatActivity {
 
     TextView sizeTextView = (TextView) findViewById(R.id.sizeView);
     sizeTextView.setText(violinSize);
-    sizeTextView.invalidate();}
+    sizeTextView.invalidate();
+    bodyLengthText.setText("");}
     }
