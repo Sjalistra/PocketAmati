@@ -28,7 +28,6 @@ public class MainActivity extends ActionBarActivity {
         * TODO: Tools wishlist
         ***********************************
         * TODO: FIXES
-        * TODO: All instances of 'scale length' into 'stop length' as I incorrectly translated it
         * TODO: ID of layout activities of Calculator Activities to be done properly
         * TODO: Comments on the code (calculators)
         * TODO: [Calcs] Compute on done

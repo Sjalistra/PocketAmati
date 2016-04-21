@@ -49,6 +49,7 @@ public class WoodDensityActivity extends AppCompatActivity {
         Toast error = Toast.makeText(context, text, length);
 
         EditText violinSizeText = (EditText) findViewById(R.id.sizeViolinInput);
+
         if (!hasChanged) {
             if (violinSizeText
                     .getText()
@@ -96,12 +97,17 @@ public class WoodDensityActivity extends AppCompatActivity {
 
         TextView sizeTextView = (TextView) findViewById(R.id.inputTextView);
 
-        if (hasChanged){
-            hasChanged = false;
-            sizeTextView.setText(R.string.gmdVolume);
-        } else {
-            hasChanged = true;
-            sizeTextView.setText(R.string.gmdMass);
+        if (violinSizeText
+                .getText()
+                .toString()
+                .matches("\\d+(\\.\\d*)?|\\.\\d+")) {
+                if (hasChanged){
+                        hasChanged = false;
+                        sizeTextView.setText(R.string.gmdVolume);
+                } else {
+                        hasChanged = true;
+                        sizeTextView.setText(R.string.gmdMass); }
+            violinSizeText.setText("");
         }
     }
 }

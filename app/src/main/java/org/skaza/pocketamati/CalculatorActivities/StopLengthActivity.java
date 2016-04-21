@@ -40,6 +40,7 @@ public class StopLengthActivity extends ActionBarActivity {
     int boardStopLengthFinale = 0;
 
     public void Compute(View v) {
+
         InputMethodManager inputManager = (InputMethodManager) getSystemService(this.INPUT_METHOD_SERVICE);
         inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
 
@@ -48,6 +49,7 @@ public class StopLengthActivity extends ActionBarActivity {
                 .getText()
                 .toString()
                 .matches("\\d+(\\.\\d*)?|\\.\\d+")) {
+
             bodyLength = Double.parseDouble(boardLengthText
                     .getText()
                     .toString());

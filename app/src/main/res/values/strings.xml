@@ -26,8 +26,8 @@
     <string name="woodDensity">Wood Density</string>
     <string name="giveMeData">Input body length</string>
     <string name="giveMeDatamm">Input body length (mm)</string>
-    <string name="gmdMass">Input wood mass</string>
-    <string name="gmdVolume">Input wood volume</string>
+    <string name="gmdMass">Input wood mass (g)</string>
+    <string name="gmdVolume">Input wood volume (cm^3)</string>
     <string name="compute">Compute</string>
     <string name="neckLength">Neck:</string>
     <string name="boardLength">Body:</string>
