@@ -73,7 +73,7 @@ public class WoodDensityActivity extends AppCompatActivity {
                 error.show();
             }
         }
-        if (massDouble != 0 && volumeDouble != 0) {
+        if (massDouble > 0 && volumeDouble > 0) {
             densityDouble = massDouble / volumeDouble;
             density = (int) densityDouble;
 
