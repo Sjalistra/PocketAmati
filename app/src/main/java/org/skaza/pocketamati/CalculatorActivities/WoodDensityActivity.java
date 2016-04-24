@@ -101,11 +101,11 @@ public class WoodDensityActivity extends AppCompatActivity {
                 .getText()
                 .toString()
                 .matches("\\d+(\\.\\d*)?|\\.\\d+")) {
-                if (hasChanged){
-                        hasChanged = false;
+                if (!hasChanged){
+                        hasChanged = true;
                         sizeTextView.setText(R.string.gmdVolume);
                 } else {
-                        hasChanged = true;
+                        hasChanged = false;
                         sizeTextView.setText(R.string.gmdMass); }
             violinSizeText.setText("");
         }

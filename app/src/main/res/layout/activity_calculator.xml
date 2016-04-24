@@ -49,7 +49,7 @@
             android:id="@+id/scaleLengthViolinView"
             android:layout_below="@+id/woodDensity"
             android:layout_alignParentLeft="true"
-            android:onClick="switchToScaleLengthViolin"
+            android:onClick="switchToStopLengthViolin"
             android:clickable="true"
             android:textColor="#ac560c"
             android:layout_marginBottom="5dp"
@@ -57,7 +57,7 @@
             android:layout_marginTop="15dp" />
         <TextView
             android:layout_width="wrap_content"
-            android:onClick="switchToScaleLengthViolin"
+            android:onClick="switchToStopLengthViolin"
             android:clickable="true"
             android:textColor="#AB7E0C"
             android:layout_height="wrap_content"
